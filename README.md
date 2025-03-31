@@ -13,6 +13,11 @@ If you are developing a production application, we recommend using TypeScript an
 
 
 
+# installed 
+    - create app with vite
+    - installed tailwind css
+    - installed routing 
+
 # netflix-gpt
 - Login/signup
     -  Sign in /Sign up form
