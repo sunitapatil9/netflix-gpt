@@ -36,7 +36,7 @@ const Header = () =>{
           });
     }
     const user = useSelector((store) => store.user);
-    console.log(user)
+    // console.log(user)
     return(
         <div className="absolute flex justify-between w-full bg-gradient-to-b from-black z-10">
                 <img className="lex-1 flex items-center max-w-40 h-auto" src={LOGO_URL}
