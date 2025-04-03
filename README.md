@@ -17,6 +17,18 @@ If you are developing a production application, we recommend using TypeScript an
     - create app with vite
     - installed tailwind css
     - installed routing 
+    - header
+    - login page
+    - signup form
+    - form validations 
+    - useref
+    - firebase setup
+    - create signup authentication in firebase
+    - update profile in login page 
+    - Bug fix : Sign up user displayName and profile picture update
+    - Bug fix :  if the user is not loggeout refirect/browse to login page and versa verca from browse url
+    - Unsubcsribed to the onAuthStateChanged
+    - Create Constants for logo and other static urls
 
 # netflix-gpt
 - Login/signup
