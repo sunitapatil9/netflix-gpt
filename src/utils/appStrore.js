@@ -5,7 +5,7 @@ import userSlice from "./userSlice";
 const appStore = configureStore({
     reducer : {
         user : userSlice,
-        nowplaymovie : nowplayingReducer,
+        movies : nowplayingReducer,
     }
 })
 export default appStore;

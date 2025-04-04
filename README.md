@@ -29,6 +29,23 @@ If you are developing a production application, we recommend using TypeScript an
     - Bug fix :  if the user is not loggeout refirect/browse to login page and versa verca from browse url
     - Unsubcsribed to the onAuthStateChanged
     - Create Constants for logo and other static urls
+    - planning for home page
+         -   {/* 
+            maincontainer
+                - video title
+                - video play
+            second container
+            */}
+    - to go TMDB api websiste from account and create an app - get access token - go to APi documentation
+    - get the Data from API for now playing movie API list
+    - custom hook from now playing movie
+    - create nowplayingslice
+    - updated the store with nowplaying movies
+    - fetch data for Trailer video
+    - update store for trailer vodeo key
+    - Embeded the youtube video and make it autoplay and mute
+    - tailwind css to make our make container beautiful.
+
 
 # netflix-gpt
 - Login/signup
