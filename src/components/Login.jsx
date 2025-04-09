@@ -6,6 +6,7 @@ import  { auth }  from "../utils/firebase"
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { BACKGROUND_IMAGE } from "../utils/constants";
 
 const Login = () =>{
 
@@ -91,7 +92,7 @@ const Login = () =>{
         <div>
             <Header/>
             <div className="absolute">
-                <img className="bg-gradient-to-t from-black" src="https://assets.nflxext.com/ffe/siteui/vlv3/fbf440b2-24a0-49f5-b2ba-a5cbe8ea8736/web_tall_panel/IN-en-20250324-TRIFECTA-perspective_69cb00d3-7b5e-45e8-b378-7757f9c8f60b_large.jpg"
+                <img className="bg-gradient-to-t from-black" src={BACKGROUND_IMAGE}
                 alt="background image"/>
             </div>
             <form onSubmit={(e) => e.preventDefault()} className="bg-black opacity-85 text-white absolute w-3/12  right-0 left-0 my-35 mx-130 p-6 m-6">

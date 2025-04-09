@@ -6,6 +6,12 @@ export const NOW_PLAYING =  {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMTc2MDQzYTM1MzgyZDg2MGE3MDEyZmRkMjhjYTRkNCIsIm5iZiI6MTc0MzY4NDM1Mi44NDYwMDAyLCJzdWIiOiI2N2VlODMwMGNmMDYxOTBjYmFlMWIyYmIiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.0GgJJI0_mNh9QovnqTF8kgtyFxH4uoipS2gaEQDd6oQ'
+      Authorization: 'Bearer' + + import.meta.env.VITE_API_KEY,
     }
   };
+
+
+  export const BACKGROUND_IMAGE = "https://assets.nflxext.com/ffe/siteui/vlv3/fbf440b2-24a0-49f5-b2ba-a5cbe8ea8736/web_tall_panel/IN-en-20250324-TRIFECTA-perspective_69cb00d3-7b5e-45e8-b378-7757f9c8f60b_large.jpg";
+
+
+  export  const OPEN_AI_API_KEY = import.meta.env.VITE_OPEN_AI_KEY ; 

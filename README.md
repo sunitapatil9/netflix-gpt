@@ -45,6 +45,12 @@ If you are developing a production application, we recommend using TypeScript an
     - update store for trailer vodeo key
     - Embeded the youtube video and make it autoplay and mute
     - tailwind css to make our make container beautiful.
+    - build secondary conatiner
+    - created movie list component movie card component
+    - GPT search feature
+    - created GPT search page 
+    - GPT search click on search button gets moviecard list 
+    - calling openAPI for mivies after that callling TMDB API
 
 
 # netflix-gpt

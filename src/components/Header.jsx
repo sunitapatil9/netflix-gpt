@@ -5,11 +5,17 @@ import { auth } from "../utils/firebase";
 import { useEffect } from "react";
 import { addUser , removeUser } from "../utils/userSlice";
 import { LOGO_URL } from "../utils/constants";
+import { addGptSearchPage } from "../utils/GptSlice";
 
 
 const Header = () =>{
     const navigate = useNavigate();
     const dispatch = useDispatch();
+    const user = useSelector((store) => store.user);
+
+  const handleGptSearchButtonClick = () =>{
+      dispatch(addGptSearchPage());
+    }
 
     useEffect(() =>{
         const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -35,13 +41,13 @@ const Header = () =>{
             // An error happened.
           });
     }
-    const user = useSelector((store) => store.user);
     // console.log(user)
     return(
         <div className="absolute flex justify-between w-full bg-gradient-to-b from-black z-10">
                 <img className="lex-1 flex items-center max-w-40 h-auto" src={LOGO_URL}
                 alt="logo" />
             {user && <div className="m-4 flex">
+                <button className="px-4 py-1 flex bg-white text-black rounded-xl cursor-pointer" onClick={handleGptSearchButtonClick}>GPT Search</button>
                 <p className="mx-2 my-2">{user?.displayName}</p>
                 {/* <img src={user?.photoURL} /> */}
                 <button className="px-4 py-1 flex-1 flex bg-white text-black rounded-xl cursor-pointer" onClick={handleSignOut}>Sign out</button>
