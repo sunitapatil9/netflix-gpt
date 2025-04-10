@@ -67,8 +67,6 @@ const Login = () =>{
                             displayName: username.current.value, photoURL: "https://example.com/jane-q-user/profile.jpg"
                           }).then(() => {
                             const {uid, email , displayName, photoURL } = auth.currentUser;
-                            console.log("current user");
-                            console.log(auth.currentUser);
                             dispatch(addUser({uid : uid, email : email,displayName : displayName,photoURL :photoURL}));
                           }).catch((error) => {
                           });

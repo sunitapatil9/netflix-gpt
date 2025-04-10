@@ -44,13 +44,14 @@ const Header = () =>{
     // console.log(user)
     return(
         <div className="absolute flex justify-between w-full bg-gradient-to-b from-black z-10">
-                <img className="lex-1 flex items-center max-w-40 h-auto" src={LOGO_URL}
+                <img className="lex-1 flex items-center max-w-30  h-15 md:max-w-40 " src={LOGO_URL}
                 alt="logo" />
             {user && <div className="m-4 flex">
-                <button className="px-4 py-1 flex bg-white text-black rounded-xl cursor-pointer" onClick={handleGptSearchButtonClick}>GPT Search</button>
+                <button className="px-2 py-2 md:px-4 md:py-1 flex bg-white text-black text-[12px] md:text-[16px] rounded-xl cursor-pointer"
+                 onClick={handleGptSearchButtonClick}>GPT Search</button>
                 <p className="mx-2 my-2">{user?.displayName}</p>
                 {/* <img src={user?.photoURL} /> */}
-                <button className="px-4 py-1 flex-1 flex bg-white text-black rounded-xl cursor-pointer" onClick={handleSignOut}>Sign out</button>
+                <button className="px-2 py-2 md:px-4 md:py-1 flex-1 flex bg-white text-black rounded-xl text-[12px] md:text-[16px] cursor-pointer" onClick={handleSignOut}>Sign out</button>
             </div>}
         </div>
     )

@@ -7,7 +7,7 @@ const GptSearchResults = () => {
     if(!moviesNames) return null;
     return (
         <div> 
-            <div className='bg-black from-bblack opacity-90'>
+            <div className='bg-black px-2 from-bblack opacity-90'>
                 {moviesNames.map((movie,index) => <MovieList key = {movie} title = {movie} movies={moviesList[index]}/>)}
                 
             </div>
